@@ -9,7 +9,14 @@ html{
 *::before{
     box-sizing: inherit;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: 3px;
+    outline-offset: 3px dotted red;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -24,7 +31,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1320px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -34,6 +41,38 @@ body {
 main {
     flex-grow: 1;
 }
+.header-tartiblash {
+    display: flex;
+    justify-content: space-between;
+}
+.header-sayt-nomi {
+   
+}
+.header-sayt {
+    text-decoration: none;
+    color: #000;
+    transition: 1s color ease;
+}
+.header-sayt:hover {
+    color:aqua;
+}
+.header-dark-mode-btn {
+ 
+}
+.header-oy {
+    align-items: center;
 
+}
+
+.header-dark-mode {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+    transition: 1s color ease;
+}
+.header-dark-mode:hover {
+    color:aqua;
+}
 
 
